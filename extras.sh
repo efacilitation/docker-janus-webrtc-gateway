@@ -1,0 +1,1 @@
+apt-get install -y wget make git doxygen graphviz
