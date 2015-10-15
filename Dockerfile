@@ -14,3 +14,5 @@ RUN ./update-libsrtp.sh
 RUN ./usrsctp.sh
 # Fetch, build and install the gateway
 RUN ./janus.sh
+# Declare the ports we use
+EXPOSE 8088
