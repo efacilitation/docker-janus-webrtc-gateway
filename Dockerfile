@@ -4,22 +4,22 @@ MAINTAINER Philip Shaw <philip.shaw@reddersky.com>
 RUN apt-get update -y
 RUN apt-get upgrade -y
 # Install dependencies
-apt-get install -y libmicrohttpd-devel
-apt-get install -y jansson-devel
-apt-get install -y libnice-dev
-apt-get install -y libssl-dev
-apt-get install -y libsrtp-dev
-apt-get install -y libsofia-sip-ua-dev
-apt-get install -y libglib2.0-dev
-apt-get install -y libopus-dev
-apt-get install -y libogg-dev
-apt-get install -y libini-config-dev
-apt-get install -y libcollection-dev
-apt-get install -y pkg-config
-apt-get install -y gengetopt
-apt-get install -y libtool
-apt-get install -y automake
-apt-get install -y wget
-apt-get install -y make
-apt-get install -y git
-apt-get install -y doxygen graphviz
+RUN apt-get install -y libmicrohttpd-devel
+RUN apt-get install -y jansson-devel
+RUN apt-get install -y libnice-dev
+RUN apt-get install -y libssl-dev
+RUN apt-get install -y libsrtp-dev
+RUN apt-get install -y libsofia-sip-ua-dev
+RUN apt-get install -y libglib2.0-dev
+RUN apt-get install -y libopus-dev
+RUN apt-get install -y libogg-dev
+RUN apt-get install -y libini-config-dev
+RUN apt-get install -y libcollection-dev
+RUN apt-get install -y pkg-config
+RUN apt-get install -y gengetopt
+RUN apt-get install -y libtool
+RUN apt-get install -y automake
+RUN apt-get install -y wget
+RUN apt-get install -y make
+RUN apt-get install -y git
+RUN apt-get install -y doxygen graphviz
