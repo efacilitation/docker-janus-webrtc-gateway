@@ -16,3 +16,5 @@ RUN ./usrsctp.sh
 RUN ./janus.sh
 # Declare the ports we use
 EXPOSE 8088
+# Define the default start-up command
+CMD /opt/janus/bin/janus
