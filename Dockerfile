@@ -12,6 +12,8 @@ RUN ./extras.sh
 RUN ./update-libsrtp.sh
 # Install usrsctp for data channel support
 RUN ./usrsctp.sh
+# Install web sockets support
+RUN ./websockets.sh
 # Fetch, build and install the gateway
 RUN ./janus.sh
 # Declare the ports we use
