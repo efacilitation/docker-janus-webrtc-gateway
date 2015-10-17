@@ -3,7 +3,7 @@ MAINTAINER Philip Shaw <philip.shaw@reddersky.com>
 # Copy installation scripts in
 COPY *.sh ./
 # Copy the apache configuration files ready for when we need them
-COPY apache/*.conf ./
+COPY apache2/*.conf ./
 # Prepare the system
 RUN ./setup.sh
 # Install dependencies
