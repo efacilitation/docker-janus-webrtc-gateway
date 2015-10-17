@@ -17,6 +17,6 @@ RUN ./websockets.sh
 # Fetch, build and install the gateway
 RUN ./janus.sh
 # Declare the ports we use
-EXPOSE 8088
+EXPOSE 8088 8188
 # Define the default start-up command
 CMD /opt/janus/bin/janus
