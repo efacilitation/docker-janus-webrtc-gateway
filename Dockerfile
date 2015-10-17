@@ -2,6 +2,8 @@ FROM ubuntu:14.04
 MAINTAINER Philip Shaw <philip.shaw@reddersky.com>
 # Copy installation scripts in
 COPY *.sh ./
+# Copy the apache configuration files ready for when we need them
+COPY apache/*.conf ./
 # Prepare the system
 RUN ./setup.sh
 # Install dependencies
@@ -14,6 +16,8 @@ RUN ./update-libsrtp.sh
 RUN ./usrsctp.sh
 # Install web sockets support
 RUN ./websockets.sh
+# Install and prepare apache
+RUN ./apache.sh
 # Fetch, build and install the gateway
 RUN ./janus.sh
 # Declare the ports we use
