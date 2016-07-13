@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Philip Shaw <philip.shaw@reddersky.com>
+MAINTAINER Efa-GmbH <team@efa-gmbh.com>
 # Copy installation scripts in
 COPY *.sh ./
 # Copy the apache configuration files ready for when we need them
