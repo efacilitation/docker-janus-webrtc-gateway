@@ -1,7 +1,31 @@
-# docker-janus-gateway
-Docker specification for Janus Gateway
-Disables RabbitMQ, Admin and Secure Websockets
-Currently suitable for LAN use only as no STUN server is specified
+# About
+
+This image contains the janus webrtc gateway. It uses the stun server from twilio ([https://www.twilio.com/stun-turn](https://www.twilio.com/stun-turn)).
 
 ## Limitations
-Demos, available on port 80, require the Janus API to be available on port 8088. As such, when spinning up a container, be sure to map this port directly rather than allowing it to be mapped to an ephemeral port.
+
+Disables RabbitMQ, Admin and Secure Websockets
+
+## Build
+
+`docker build -t efacilitation/docker-janus-webrtc-gateway`
+
+## Ports
+
+| Port   | Description   |
+|--------|---------------|
+| 80     | HTML-Examples |
+| 8088   | RESTful API   |
+| 8188   | WebSocket API |
+
+## Environment variables
+
+Not environment variables are needed for this image.
+
+## Linked Containers
+
+This container does not need any container linked to.
+
+## Run
+
+`docker run -d -p 80:80 -p 8088:8088 -p 8188:8188 efacilitation/docker-janus-webrtc-gateway:latest`
