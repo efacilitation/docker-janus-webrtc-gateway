@@ -25,7 +25,7 @@ Disables RabbitMQ, Admin and Secure Websockets
 
 ## Environment variables
 
-Not environment variables are needed for this image.
+No environment variables are needed for this image.
 
 ## Linked Containers
 
