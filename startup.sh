@@ -1,3 +1,3 @@
 service apache2 start
 cd /opt/janus/bin
-./janus --stun-server=global.stun.twilio.com:3478
+./janus --stun-server=stun.l.google.com:19302
