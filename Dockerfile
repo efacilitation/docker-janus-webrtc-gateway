@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Efa-GmbH <team@efa-gmbh.com>
 # Copy installation scripts in
 COPY *.sh ./
@@ -10,8 +10,8 @@ RUN ./setup.sh
 RUN ./dependencies.sh
 # Install extras
 RUN ./extras.sh
-# Update libsrtp to 1.5.0 to avoid Janus issues with the default 1.4.x
-RUN ./update-libsrtp.sh
+# Update libsrtp 1.5.0 to avoid Janus issues with the default 1.4.x
+RUN ./libsrtp.sh
 # Install usrsctp for data channel support
 RUN ./usrsctp.sh
 # Install web sockets support
