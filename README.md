@@ -2,7 +2,7 @@
 
 -   This image contains the janus webrtc gateway from meetecho ([https://github.com/meetecho/janus-gateway](https://github.com/meetecho/janus-gateway))
 
--   It uses the stun server from twilio ([https://www.twilio.com/stun-turn](https://www.twilio.com/stun-turn))
+-   It uses the stun server from google
 
 -   This repository is published at [https://hub.docker.com/r/efacilitation/docker-janus-webrtc-gateway/
 ](https://hub.docker.com/r/efacilitation/docker-janus-webrtc-gateway/)
