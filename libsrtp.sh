@@ -1,7 +1,7 @@
 cd ~
 git clone https://github.com/cisco/libsrtp.git
 cd libsrtp
-git checkout v1.5.0
+git checkout v2.0.0
 ./configure --prefix=/usr --enable-openssl
-make libsrtp.so
+make shared_library
 sudo make install
