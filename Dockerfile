@@ -10,8 +10,10 @@ RUN ./setup.sh
 RUN ./dependencies.sh
 # Install extras
 RUN ./extras.sh
-# Update libsrtp 1.5.0 to avoid Janus issues with the default 1.4.x
+# Install libsrtp 1.5.0 to avoid Janus issues with the default 1.4.x
 RUN ./libsrtp.sh
+# Install libsrtp 2
+RUN ./libsrtp2.sh
 # Install usrsctp for data channel support
 RUN ./usrsctp.sh
 # Install web sockets support
