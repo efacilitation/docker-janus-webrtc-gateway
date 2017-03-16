@@ -13,7 +13,7 @@ Disables RabbitMQ, Admin and Secure Websockets
 
 ## Build
 
-`docker build -t efacilitation/docker-janus-webrtc-gateway`
+`docker build -t efacilitation/docker-janus-webrtc-gateway .`
 
 ## Ports
 
