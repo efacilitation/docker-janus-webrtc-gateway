@@ -1,15 +1,15 @@
 # About
 
--   This image contains the janus webrtc gateway from meetecho ([https://github.com/meetecho/janus-gateway](https://github.com/meetecho/janus-gateway))
+-   This image contains the meetecho janus webrtc gateway  ([https://github.com/meetecho/janus-gateway](https://github.com/meetecho/janus-gateway))
 
--   It uses the stun server from google
+-   It uses the google stun server
 
--   This repository is published at [https://hub.docker.com/r/efacilitation/docker-janus-webrtc-gateway/
+-   This repository is published here: [https://hub.docker.com/r/efacilitation/docker-janus-webrtc-gateway/
 ](https://hub.docker.com/r/efacilitation/docker-janus-webrtc-gateway/)
 
 ## Limitations
 
-Disables RabbitMQ, Admin and Secure Websockets
+Disables RabbitMQ and MQTT
 
 ## Build
 
@@ -33,4 +33,4 @@ This container does not need any container linked to.
 
 ## Run
 
-`docker run -d -p 80:80 -p 8088:8088 -p 8188:8188 efacilitation/docker-janus-webrtc-gateway:latest`
+`docker run -d -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 efacilitation/docker-janus-webrtc-gateway:latest`
